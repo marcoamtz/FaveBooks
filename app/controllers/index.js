@@ -28,27 +28,24 @@ $.itemList.addEventListener('itemclick', function (e) {
 	
 });
 
-var initMenuItemListener = function(e) {
-	console.log('INIT');
-	$.addBook.addEventListener('click', function () {
-		console.log('CLICK');
-		var myAddBook = Alloy.createController('addbook', {}).getView();
-		if (OS_IOS) {
-			$.navGroupWin.openWindow(myAddBook);
-		}
-		if (OS_ANDROID) {
-			myAddBook.open();
-		}
-	});
-};
 
-// if (OS_IOS) {
-	initMenuItemListener();
+$.addBook.addEventListener('click', function () {
+	console.log('CLICK');
+	var myAddBook = Alloy.createController('addbook', {}).getView();
+	if (OS_IOS) {
+		$.navGroupWin.openWindow(myAddBook);
+	}
+	if (OS_ANDROID) {
+		myAddBook.open();
+	}
+});
+
+if (OS_IOS) {
 	$.navGroupWin.open();
-// }
-// if (OS_ANDROID) {
+}
+if (OS_ANDROID) {
 // 	var activity = $.getView().activity;
 // 	activity.onCreateOptionsMenu = initMenuItemListener;
 // 	console.log('ACT', activity);
-// 	$.getView().open();
-// }
+	$.index.open();
+}
