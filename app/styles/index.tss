@@ -1,0 +1,19 @@
+'#label' : {
+	font : {
+		fontSize : 12
+	}
+},
+'.container' : {
+	backgroundColor : Alloy.Globals.colors.white
+},
+'Label' : {
+	width : Ti.UI.SIZE,
+	height : Ti.UI.SIZE,
+	color : Alloy.Globals.colors.black
+},
+'ListItem[platform=android]' : {
+    font : {
+       fontSize : 24
+    },
+    height : 40
+}

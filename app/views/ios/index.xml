@@ -1,0 +1,17 @@
+<Alloy>
+	<Collection src="books"/>
+	<NavigationWindow id="navGroupWin">
+		<Window class="container" title="My Books">
+			<ListView id="itemList">
+				<ListSection dataCollection="books">
+					<ListItem title="{title}" author="{author}"></ListItem>
+				</ListSection>
+			</ListView>
+			<Toolbar bottom="0">
+			    <Items>
+			        <Button id="addBook" title="Add book"/>
+			    </Items>
+			</Toolbar>
+		</Window>
+	</NavigationWindow>
+</Alloy>
