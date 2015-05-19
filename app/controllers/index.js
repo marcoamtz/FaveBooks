@@ -28,9 +28,10 @@ $.itemList.addEventListener('itemclick', function (e) {
 	
 });
 
-console.log('menuItem', $.addBook);
+
 var initMenuItemListener = function () {
-		$.addBook.addEventListener('click', function () {
+	console.log('menuItem', $.addBook);
+	$.addBook.addEventListener('click', function () {
 		console.log('CLICK');
 		var myAddBook = Alloy.createController('addbook', {}).getView();
 		if (OS_IOS) {
