@@ -2,7 +2,8 @@
 	<Collection src="books"/>
 	<Window class="container" fullscreen="true" title="My Books">
 		<Menu id="menu" platform="android">
-	    	<MenuItem id="addBook"
+	    	<MenuItem 
+	    		id="addBook"
 	        	title="Add book"
 	        	showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM"
 	        />
